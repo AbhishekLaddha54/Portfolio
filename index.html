@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="nav-container">
+            <h1><a href="#intro">Abhishek Laddha's Portfolio</a></h1>
+            <ul>
+                <li><a href="#intro">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Introduction Section -->
+    <section id="intro">
+        <div class="intro-content">
+            <img src="Image.png" alt="Your Name">
+            <div class="intro-text">
+                <h1>Hello, I'm Abhishek</h1>
+                <p>I'm a student and a software developer with a passion for freelancing. Let's connect and change the tech world together!</p>
+                <a href="#contact" class="cta-button">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Featured Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="tryon.png" alt="Project 1">
+                <div class="project-info">
+                    <h3>Try On App</h3>
+                    <p>An app which allows the user to try any product virtually by simply uploading an image</p>
+                    <a href="https://youtu.be/mABflJ63LH8?si=7PMfqNumYZT6c92t" class="project-link">View Project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="portfolio.png" alt="Project 2">
+                <div class="project-info">
+                    <h3>My Portfolio</h3>
+                    <p>Created my own portfolio website to interact with more people easily.</p>
+                    <a href="#" class="project-link">View Project</a>
+                </div>
+            </div>
+            <!-- Add more project cards as needed -->
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <h2>My Experience</h2>
+        <div class="experience-timeline">
+            <div class="experience-item">
+                <h3>SDET Intern at Swiggy Private Limited</h3>
+                <p><strong>Duration:</strong> July 2024 - Present</p>
+                <p>Working in Swiggy Instamart's team, where we debug and fix all the upcoming updates in Swiggy Instamart. This involves converting good knowledge of Java, REST API and microservices into practice.</p>
+            </div>
+            <!-- Add more experience items as needed -->
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills-list">
+            <div class="skill">Data Structures and Algorithms</div>
+            <div class="skill">Full Stack Development</div>
+            <div class="skill">Python and Generative AI</div>
+            <!-- Add more skills as needed -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form" action="https://formspree.io/f/xovayleg" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Abhishek. All Rights Reserved.</p>
+    </footer>
+
+    
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Thank you for your message! I will get back to you soon.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
